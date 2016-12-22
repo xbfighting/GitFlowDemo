@@ -1,0 +1,18 @@
+# 一个完整的GitFlow案例
+
+标签（空格分隔）： git demo
+
+---
+## 1 项目初始化
+
+ - 在 GitLab上创建项目 "GitFlowDemo"
+ ![在 GitLab上创建项目 "GitFlowDemo"][1]
+ - 目前只有一个分支 master
+ ![目前只有一个分支 master][3]
+ - 在本地获取项目
+ ![目前只有一个分支 master][2]
+
+
+  [1]: http://o97p8x5mf.bkt.clouddn.com/01%20gitlab%E5%88%9B%E5%BB%BA%E9%A1%B9%E7%9B%AE.png
+  [2]: http://o97p8x5mf.bkt.clouddn.com/01.02%20gitbash%20master%20branch.png
+  [3]: http://o97p8x5mf.bkt.clouddn.com/01.01%20gitlab%E5%88%9B%E5%BB%BA%E9%A1%B9%E7%9B%AE%20%E5%8F%AA%E6%9C%89%E4%B8%80%E4%B8%AA%E5%88%86%E6%94%AF.png
