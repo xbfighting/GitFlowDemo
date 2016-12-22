@@ -1,65 +1,6 @@
-a. 创建develop分支
+一个完整的GitFlow
 
-git branch develop
-git push -u origin develop
-b. 开始新Feature开发
+简要说明：就像代码需要代码规范一样，代码管理同样需要一个清晰的流程和规范本。
+本案例主要展示了一个项目通过使用GitFlow管理代码的从特性开发到测试、发布、热修复和代码回归的整个流程。
 
-git checkout -b some-feature develop
-# Optionally, push branch to origin:
-git push -u origin some-feature    
-
-# 做一些改动    
-git status
-git add some-file
-git commit
-c. 完成Feature
-
-git pull origin develop
-git checkout develop
-git merge --no-ff some-feature
-git push origin develop
-
-git branch -d some-feature
-
-# If you pushed branch to origin:
-git push origin --delete some-feature
-d. 开始Relase
-
-git checkout -b release-0.1.0 develop
-
-# Optional: Bump version number, commit
-# Prepare release, commit
-e. 完成Release
-
-git checkout master
-git merge --no-ff release-0.1.0
-git push
-
-git checkout develop
-git merge --no-ff release-0.1.0
-git push
-
-git branch -d release-0.1.0
-
-# If you pushed branch to origin:
-git push origin --delete release-0.1.0   
-
-git tag -a v0.1.0 master
-git push --tags
-f. 开始Hotfix
-
-git checkout -b hotfix-0.1.1 master
-g. 完成Hotfix
-
-git checkout master
-git merge --no-ff hotfix-0.1.1
-git push
-
-git checkout develop
-git merge --no-ff hotfix-0.1.1
-git push
-
-git branch -d hotfix-0.1.1
-
-git tag -a v0.1.1 master
-git push --tags
+PS:本案例中涉及到的分支的新建、合并和删除等操作都可以在GitLab上完成。
