@@ -1,6 +1,6 @@
 # 一个完整的GitFlow案例
 
-标签（空格分隔）： git demo
+git flow  demo
 
 ---
 ## 1.项目初始化
